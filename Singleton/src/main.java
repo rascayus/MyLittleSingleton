@@ -3,18 +3,18 @@ public class main {
 
 	public static void main(String[] args) {
         
-        Unicon ricardo = Unicon.getSingletonInstance("Ricardo Moya");
-        Unicon ramon = Unicon.getSingletonInstance("Ramón Invarato");
-        
+        Unicon juan = Unicon.getSingletonInstance("Juan Diego Alonso");
+        Unicon ramon = Unicon.getSingletonInstance("Ramón García");
+        // aqui intentamos clonar pero nos da error
         try{
-            Unicon richard = ricardo.clone();
+            Unicon richard = juan.clone();
             System.out.println(richard);
         }catch (NullPointerException ex){
             ex.printStackTrace();
         }
         
-        // ricardo y ramon son referencias a un único objeto de la clase SoyUnico
+        // juan y ramon son referencias a un único objeto de la clase Unicon
         System.out.println(ramon);
-        System.out.println(ricardo);   
+        System.out.println(juan);   
     }
 }

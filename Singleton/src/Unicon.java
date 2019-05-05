@@ -21,7 +21,7 @@ public class Unicon {
     }
 
 	   
-    // metodos getter y setter
+    //Sobreescribimos el método clonar para no permitirlo
     @Override
     public Unicon clone(){
         try {
