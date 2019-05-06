@@ -1,6 +1,15 @@
 
+/**
+ * @author Grupo de trabajo Singleton DAW Severo Ochoa
+ * @since 02.05.2019
+ * @version 1.1.0
+ *
+ */
 public class main {
 
+	/**
+	 * @param args de clase principal
+	 */
 	public static void main(String[] args) {
         
         Unicon juan = Unicon.getSingletonInstance("Juan Diego Alonso");

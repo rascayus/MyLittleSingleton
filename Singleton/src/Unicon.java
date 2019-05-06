@@ -1,3 +1,9 @@
+/**
+ * @author Grupo de trabajo Singleton DAW Severo Ochoa
+ * @since 02.05.2019
+ * @version 1.1.0
+ *
+ */
 public class Unicon {
 
     private String nombre;
@@ -9,6 +15,10 @@ public class Unicon {
         System.out.println("Mi nombre es: " + this.nombre);
     }
 
+    /**
+     * @param nombre
+     * @return único objeto posible
+     */
     public static Unicon getSingletonInstance(String nombre) {
         if (soyUnico == null){
             soyUnico = new Unicon(nombre);
